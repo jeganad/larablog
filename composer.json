@@ -1,0 +1,43 @@
+{
+    "name": "naoray/larablog",
+    "type": "package",
+    "description": "A minimal blogging package.",
+    "keywords": [
+        "larablog",
+        "laravel",
+        "blog"
+    ],
+    "homepage": "https://github.com/naoray/larablog",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Naoray",
+            "email": "krishan.koenig@googlemail.com",
+            "homepage": "https://nms.digital"
+        }
+    ],
+    "require": { 
+        "php": "~5.6|~7.1",
+        "illuminate/support": "~5.4",
+        "naoray/larablog-default-theme": "1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~5.7",
+        "orchestra/testbench": "~3.4",
+        "illuminated/testing-tools": "^0.5.5"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Naoray\\Larablog\\Test\\": "tests"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Naoray\\Larablog\\": "app/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "minimum-stability": "stable"
+}
