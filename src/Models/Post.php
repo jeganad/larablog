@@ -3,11 +3,15 @@
 namespace Naoray\Larablog\Models;
 
 use Carbon\Carbon;
+use Spatie\Sluggable\HasSlug;
+use Spatie\Sluggable\SlugOptions;
 use Illuminate\Database\Eloquent\Model;
 use Naoray\Larablog\Contracts\Post as PostContract;
 
 class Post extends Model implements PostContract
 {
+    use HasSlug;
+
     /**
      * The attributes that aren't mass assignable.
      *
@@ -30,6 +34,16 @@ class Post extends Model implements PostContract
      * @var array
      */
     protected $dates = ['published_at'];
+
+    /**
+     * Get the options for generating the slug.
+     */
+    public function getSlugOptions() : SlugOptions
+    {
+        return SlugOptions::create()
+            ->generateSlugsFrom(['published_at', 'title'])
+            ->saveSlugsTo('slug');
+    }
 
     /**
      * Create a new Eloquent model instance.
