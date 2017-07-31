@@ -90,7 +90,7 @@ return [
     |
     | This value determines how much characters of the post are shown at the
     | blog posts overview page.
-    */    
+    */
 
     'post_preview_length' => 500,
 
