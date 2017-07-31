@@ -22,11 +22,13 @@ class BlogController extends BaseController
     /**
      * Show single post page.
      *
-     * @param  Post   $post [description]
-     * @return [type]       [description]
+     * @param  String   $post [description]
+     * @return [type]         [description]
      */
-    public function show(Post $post)
+    public function show($slug)
     {
+        $post = Post::whereSlug($slug)->first();
+
         return view('larablog::frontend.show', compact('post'));
     }
 }
