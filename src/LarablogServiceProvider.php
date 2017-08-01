@@ -11,7 +11,7 @@ class LarablogServiceProvider extends ServiceProvider
 {
     /**
      * Holds all packages which are used inside of larablog.
-     * 
+     *
      * @var array
      */
     protected $packageProviders = [
