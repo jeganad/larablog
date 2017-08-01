@@ -179,4 +179,15 @@ return [
             'frontend' => 'larablog::shared.footer',
         ],
     ],
+
+    /*
+    |--------------------------------------------------------------------------
+    | Larablog third party Providers
+    |--------------------------------------------------------------------------
+    |
+    | Is used to keep track of each provider used in Larablog package and
+    | beeing able to publish their ressources later on.
+    */
+
+    'providers' => []
 ];

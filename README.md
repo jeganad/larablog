@@ -1,3 +1,11 @@
+# ToDo
+- add support for images
+- add support for markdown editor
+- Update description
+- update design
+- add bootstrap template
+    + like laravel bouncer spatie version
+
 # Larablog
 
 [![Latest Version on Packagist][ico-version]][link-packagist]
