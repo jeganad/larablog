@@ -19,7 +19,7 @@
     "require": { 
         "php": "^7.3",
         "illuminate/support": "*",
-        "naoray/larablog-default-theme": "*"
+        "jeganad/larablog-default-theme": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "~5.7",
